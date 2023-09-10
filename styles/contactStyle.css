@@ -47,6 +47,14 @@ header{
     cursor: pointer;
 }
 
+body.scrolled header{
+    height: 8vh;
+}
+
+body.scrolled .header-text{
+    font-size: calc(15px + 0.5vw);
+}
+
 /*Header*/
 
 /*------------------------------------------*/
