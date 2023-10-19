@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+header{
+    position: relative;
+}
+
+.sfa_logo{
+    width: 150px;
+    position: absolute;
+    left: 35px;
+    top: 20px;
+}
+
+.header__menubar{
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 220px;
+    padding-right: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #9F2637;
+    color: white;
+}
+
+.header__menubar nav{
+    display: flex;
+    gap: 40px;
+}
+
+.auth_block{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.auth_block button{
+    background-color: #933f4a;
+    height: 60px;
+    width: 130px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.auth_block button:hover{
+    background-color: #9F2637;
+    border: 1px solid white;
+}
+
+.header__navigation{
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 220px;
+    padding-right: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.header__navigation nav{
+    display: flex;
+    align-items: center;
+}
+
+.header__navigation nav a{
+    padding: 20px 30px;
+}
+
+.header__navigation nav a:hover{
+    border-bottom: 3px solid black;
+}
+
+/* Header */
+
+/*Welcome Block*/
