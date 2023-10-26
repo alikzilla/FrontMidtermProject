@@ -53,10 +53,12 @@ header{
     gap: 40px;
 }
 
-.auth_block{
-    display: flex;
-    gap: 15px;
-    align-items: center;
+.header__menubar nav a:hover{
+    text-decoration: underline;
+}
+
+.hamburger{
+    display: none;
 }
 
 .auth_block button{
@@ -201,8 +203,36 @@ header{
 
 .main_posts__block{
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.post{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
     background-color: #012E58;
     border-radius: 10px;
+    color: white;
+}
+
+.post:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.post img{
+    width: 60%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.post-title{
+    font-size: 35px;
+}
+
+.post p{
+    font-size: 20px;
 }
 
 .nav_posts__block{
@@ -223,6 +253,7 @@ header{
     border: 1px solid #012E58;
     border-radius: 10px;
     padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .matchweek{
@@ -252,20 +283,24 @@ header{
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  width: 60%;
+  width: 80%;
 }
 
 .match_list li,
 .next_match_list li {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   border-top: 1px solid #012E58;
   width: 100%;
   padding: 10px 0;
-  gap: 10px;
-  font-size: 14px;
-  text-align: center; /* Add this line to center-align text within li elements */
+  font-size: 15px;
+
+}
+
+.list_item{
+    width: 20%;
+    text-align: center;
 }
 
 .match_post button{
@@ -280,6 +315,77 @@ header{
 }
 
 .match_post button:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+.scoreboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    border: 1px solid #012E58;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.score_table{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.score_row:first-child{
+    font-size: 20px;
+}
+
+.score_row{
+    width: 100%;
+    display: flex;
+    font-size: 25px;
+    gap: 10px;
+    border-bottom: 1px solid gray;
+    height: 45px;
+}
+
+.score_1item{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score_2item{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.score_3item{
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.scoreboard button{
+    width: 95%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #012E58;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #012E58;
+}
+
+.scoreboard button:hover{
     background-color: rgb(224, 224, 224);
 }
 
@@ -335,4 +441,163 @@ footer{
 
 .description__nav a:hover{
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1400px) {
+    .container{
+        max-width: 1100px;
+    }
+
+    .header__menubar nav a{
+        font-size: 20px;
+    }
+
+    .sfa_logo{
+        width: 60px;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .header__menubar{
+        padding-left: 150px;
+    }
+
+    .header__navigation{
+        display: none;
+    }
+
+    .welcome__block{
+        margin-top: 95px;
+    }
+
+    .main_posts__block{
+        width: 100%;
+    }
+
+    .post-title{
+        font-size: 30px;
+    }  
+
+    .nav_posts__block{
+        display: none;
+    }
+
+    .footer__links h1{
+        font-size: 20px;
+    }
+    
+    .footer__links a{
+        font-size: 15px;
+    }
+
+    .footer__description{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container{
+        max-width: 700px;
+    }
+
+    .header__menubar nav{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .post{
+        flex-direction: column;
+    }
+
+    .post img{
+        width: 100%;
+        height: auto;
+    }
+
+    .post:nth-child(2){
+        flex-direction: column;
+    }
+
+    .post-title{
+        font-size: 25px;
+    }  
+
+    .footer__links_block{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer__links{
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer__links h1{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .footer__links a{
+        font-size: 20px;
+    }
+
+    .footer__description{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .description__nav{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .container{
+        max-width: 300px;
+    }
+
+    .header__menubar{
+        justify-content: space-between;
+        padding-right: 0;
+        padding-left: 320px;
+    }
+
+    .hamburger{
+        margin-right: 30px;
+    }
+
+    .posts{
+        flex-direction: column;
+    }
+
+    .post_wrapper{
+        width: 100%;
+    }
+
+    .welcome_post a h1{
+        font-size: 20px;
+    }
+
+    .welcome_post p{
+        font-size: 15px;
+    }
+
+    .post_wrapper_side{
+        width: 100%;
+    }
+
+    .post-title{
+        font-size: 20px;
+    }   
+
+    .post p{
+        font-size: 15px;
+    }
 }
