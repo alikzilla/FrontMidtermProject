@@ -403,6 +403,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
@@ -549,12 +550,50 @@ footer{
     }
 
     .footer__description{
-        flex-direction: column;
         gap: 30px;
     }
 
     .description__nav{
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 500px;
+    }
+
+    .welcome_post a h1{
+        font-size: 20px;
+    }
+
+    .welcome_post p{
+        font-size: 15px;
+    }
+
+    .welcome_post_side a h1{
+        font-size: 15px;
+    }
+
+    .welcome_post_side p{
+        font-size: 10px;
+    }
+
+    .post-title{
+        font-size: 20px;
+    }   
+
+    .post p{
+        font-size: 15px;
+    }
+
+    .footer__links h1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .footer__links a{
+        font-size: 15px;
     }
 }
 
