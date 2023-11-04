@@ -19,3 +19,14 @@ setMatchTable(matchList, nextMatchList);
 
 const scoreTable = document.querySelector(".score_table");
 setScoreboard(scoreTable);
+
+const sidebar = document.querySelector(".sidebar");
+const hamburger = document.querySelector('.hamburger');
+const closeBtn = document.querySelector('.closeBar')
+
+const toggleSidebar = () => {
+  sidebar.classList.toggle("close");
+};
+
+hamburger.addEventListener("click", toggleSidebar);
+closeBtn.addEventListener("click", toggleSidebar);
