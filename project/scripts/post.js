@@ -1,5 +1,4 @@
 import { getCurrentDate, getNextDate } from './modules/date.js';
-import { setupPostHover } from './modules/posts.js';
 import { setMatchTable, setScoreboard } from './modules/teams.js';
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -9,8 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const pNextDate = document.getElementById("next_date");
     pNextDate.textContent = getNextDate(date);
-
-    setupPostHover();
 });
 
 const matchList = document.querySelector(".match_list");

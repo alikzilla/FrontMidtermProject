@@ -181,90 +181,19 @@ header{
     border-bottom: 3px solid black;
 }
 
-.header__navigation nav a:first-child{
-    border-bottom: 3px solid black;
-}
-
 .hamburger:hover{
     background-color: #012E58;
 }
 
 /* Header */
 
-/*Welcome Block*/
-
-.welcome__block{
-    background-color: #9F2637;
-    padding: 30px 0;
-    margin-top: 190px;
-}
-
-.posts{
-    width: 100%;
-    display: flex;
-    gap: 30px;
-}
-
-.post_wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    width: 60%;
-}
-
-.post_wrapper_side{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-    gap: 20px;
-}
-
-.welcome_post{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    color: white;
-    width: 1200px;
-    gap: 15px;
-}
-
-.welcome_post_side{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    color: white;
-    width: 100%;
-    gap: 5px;
-}
-
-.welcome_post img, .welcome_post_side img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-.welcome_post a:hover, .welcome_post_side a:hover{
-    text-decoration: underline;
-}
-
-.welcome_post h1{
-    font-size: 30px;
-}
-
-.welcome_post p{
-    font-size: 20px;
-}
-
-.welcome_post_side h1{
-    font-size: 20px;
-}
 
 /*Main Posts*/
 
 .main_posts{
-    padding: 100px 0;
+    background-color: #012E58;
+    margin-top: 190px;
+    padding: 50px 0;
 }
 
 .main_posts__wrapper{
@@ -283,8 +212,8 @@ header{
 
 .post{
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    padding: 20px;
     background-color: #012E58;
     border-radius: 10px;
     color: white;
@@ -295,7 +224,7 @@ header{
 }
 
 .post img{
-    width: 60%;
+    width: 100%;
     height: 100%;
     border-radius: 10px;
 }
@@ -327,6 +256,7 @@ header{
     border-radius: 10px;
     padding-bottom: 10px;
     margin-bottom: 30px;
+    background-color: white;
 }
 
 .matchweek{
@@ -402,6 +332,7 @@ header{
     border-radius: 10px;
     padding-bottom: 10px;
     margin-bottom: 30px;
+    background-color: white;
 }
 
 .score_table{
@@ -460,6 +391,90 @@ header{
 
 .scoreboard button:hover{
     background-color: rgb(224, 224, 224);
+}
+
+.comments-block{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3em;
+    gap: 30px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.comment-user{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.divisor{
+    background-color: grey;
+    width: 100%;
+    height: 1px;
+}
+
+.reply-button{
+    background-color: rgb(230,237,206);
+    color: rgb(143,147,127);
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.reply-button:hover{
+    color: white;
+    background-color: rgb(143,147,127)  ;
+}
+
+.comment-input{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.comment-textarea{
+    padding: 3em;
+}
+
+.comment-submit{
+    background-color: #9F2637;
+    width: 100%;
+    padding: 3em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    
+}
+
+.textarea{
+    font-size: 25px;
+    width: 100%;
+    resize: vertical;
+    border: none;
+}
+
+.submit-button{
+    background-color: #012E58   ;
+    color: aliceblue;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
 }
 
 /*Main Posts*/
@@ -602,6 +617,10 @@ footer{
     /*header*/
 
     /*welcome*/
+
+    .main_posts{
+        margin-top: 85px;
+    }
 
     .post{
         flex-direction: column;
@@ -752,4 +771,21 @@ footer{
     }
 
     /*Welcome*/
+
+    .comment-textarea{
+        padding: 1em;
+        border-radius: 10px;
+    }
+
+    .comment-submit{
+        padding: 1em;
+        border-radius: 10px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .comments-block{
+        padding: 1em;
+        border-radius: 10px;
+    }
 }
