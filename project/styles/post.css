@@ -772,9 +772,12 @@ footer{
 
     /*Welcome*/
 
+    .comment-input{
+        border-radius: 10px;
+    }
+
     .comment-textarea{
         padding: 1em;
-        border-radius: 10px;
     }
 
     .comment-textarea textarea{
