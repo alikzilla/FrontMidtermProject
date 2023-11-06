@@ -22,8 +22,39 @@ const hamburger = document.querySelector('.hamburger');
 const closeBtn = document.querySelector('.closeBar')
 
 const toggleSidebar = () => {
-  sidebar.classList.toggle("close");
+    sidebar.classList.toggle("close");
 };
 
 hamburger.addEventListener("click", toggleSidebar);
 closeBtn.addEventListener("click", toggleSidebar);
+
+const inputComment = document.querySelector('.textarea');
+const submitComment = document.querySelector('.submit-button');
+const comments = document.querySelector('.comments');
+
+submitComment.addEventListener('click', () => {
+    let comment = inputComment.value;
+    if(comment !== ""){
+        let section = document.createElement('section');
+        section.classList.add('comments-block');
+        section.innerHTML = 
+            `<div class="comment-user">
+                <img src="assets/main/user.png" alt="" width="50px">
+                <div class="comment-user-data">
+                    <p class="user-title"><b>Anonymous</b> says:</p>
+                </div>
+            </div>
+            <div class="divisor"></div>
+            <div class="comment-content-wrapper">
+                <div class="comment-content">
+                    ${comment}
+                </div>
+            </div>
+            <button class="reply-button">Reply</button>
+            `
+        comments.appendChild(section);
+    }else{
+        alert('Type Something to leave a comment');
+    }
+    inputComment.value = '';
+});
