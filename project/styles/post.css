@@ -419,8 +419,8 @@ header{
 }
 
 .reply-button{
-    background-color: rgb(230,237,206);
-    color: rgb(143,147,127);
+    background-color: #012E58;
+    color: white;
     width: 60px;
     height: 30px;
     border: none;
@@ -431,7 +431,7 @@ header{
 
 .reply-button:hover{
     color: white;
-    background-color: rgb(143,147,127)  ;
+    background-color: #1d5991;
 }
 
 .comment-input{
@@ -777,6 +777,10 @@ footer{
         border-radius: 10px;
     }
 
+    .comment-textarea textarea{
+        font-size: 15px;
+    }
+
     .comment-submit{
         padding: 1em;
         border-radius: 10px;
@@ -787,5 +791,9 @@ footer{
     .comments-block{
         padding: 1em;
         border-radius: 10px;
+    }
+
+    .submit-button{
+        font-size: 15px;
     }
 }
