@@ -33,7 +33,7 @@ ul, li{
     padding: 15px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease;
-    border: #012E58 3px solid;
+    /* border: #012E58 3px solid; */
 }
 
 .sidebar.close {
@@ -45,7 +45,6 @@ ul, li{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
     overflow-y: auto;
     height: calc(100% - 82px);
 }
