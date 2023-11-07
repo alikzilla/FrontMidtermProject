@@ -452,25 +452,29 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border-radius: 20px;
 }
 
 .comment-textarea{
-    padding: 3em;
+    padding: 2em 3em;
+}
+
+.comment-textarea textarea{
+    height: 300px;
+    outline: none;
 }
 
 .comment-submit{
     background-color: #9F2637;
     width: 100%;
-    padding: 3em;
+    padding: 1em 3em;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     border-radius: 20px;
     border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    
+    border-top-right-radius: 0;   
 }
 
 .textarea{
@@ -487,6 +491,12 @@ header{
     padding: 10px 20px;
     font-size: 20px;
     border-radius: 5px;
+    transition: 0.3s;
+}
+
+.submit-button:hover{
+    color: white;
+    background-color: #1d5991;
 }
 
 /*Main Posts*/
@@ -794,6 +804,7 @@ footer{
 
     .comment-textarea textarea{
         font-size: 15px;
+        height: 100px;
     }
 
     .comment-submit{

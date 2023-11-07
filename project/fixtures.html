@@ -2,12 +2,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SFA: About</title>
+  <title>SDU Football Association</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="styles/Assets/homepage/sfa_logo.png">
-  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/fixtures.css">
 </head>
 <body>
 
@@ -38,22 +38,47 @@
       </div>
   
     </header>
-  
-    <section class="about">
+    
+    <section class="main_posts">
       <div class="container">
-        <div class="about_post__wrapper">
-          <div class="about_post">
-            <div class="post_content">
-              <img class="about_sfa_logo" src="styles/Assets/homepage/sfa_logo.png" alt="sfa-logo">
-              <h1>SDU Football Association</h1>
-              <p>SDU Football Association or SFA is Association of football lovers in our university
-                SDU, there u can find diff infos like table, scoreboards and etc.
-              </p>
+        <div class="main_posts__wrapper">
+  
+          <div class="nav_posts__block">
+            
+            <div class="match_post">
+              <div class="matchweek">
+                <img src="styles/Assets/homepage/sfa_logo.png" alt="sfa-logo" width="50px">
+                <h1>Matchweek 8</h1>
+              </div>
+              <p>All times shown are your <b>local time</b></p>
+              <p id="current_date" class="text"></p>
+              <ul class="match_list">
+
+              </ul>
+              <p id="next_date"></p>
+              <ul class="next_match_list">
+
+              </ul>
+            </div>
+  
+            <div class="scoreboard">
+              <div class="matchweek">
+                <img src="styles/Assets/homepage/sfa_logo.png" alt="sfa-logo" width="50px">
+                <h1>SFA LEAGUE</h1>
+              </div>
+              <table class="score_table">
+                <tr class="score_row">
+                  <td class="score_1item">Pos</td>
+                  <td class="score_2item">Club</td>
+                  <td class="score_3item">Pts</td>
+                </tr>
+              </table>
             </div>
           </div>
+  
         </div>
       </div>
-    </section>  
+    </section>
   
     <footer>
       <div class="container">
@@ -70,7 +95,7 @@
   
           <div class="footer__links">
             <h1>Fantasy</h1>
-            <a href="">SFA Home</a>
+            <a href="about.html">SFA Home</a>
             <a href="">My Team</a>
             <a href="">SFA Transfers</a>
             <a href="">Leagues</a>
@@ -139,12 +164,12 @@
   
         <div class="footer__description">
           <div class="description__nav">
-            <a href="#">© SDU FOOTBALL ASSOTIATION 2023</a>
-            <a href="#">Modern Slavery Statement</a>
-            <a href="#">Equality, Diversity and Inclusion</a>
-            <a href="#">Standard Terms & Conditions</a>
-            <a href="#">Policies Cookie</a>
-            <a href="#">Policy Back To Top</a>
+            <a href="">© SDU FOOTBALL ASSOTIATION 2023</a>
+            <a href="">Modern Slavery Statement</a>
+            <a href="">Equality, Diversity and Inclusion</a>
+            <a href="">Standard Terms & Conditions</a>
+            <a href="">Policies Cookie</a>
+            <a href="">Policy Back To Top</a>
           </div>
           <div>
             <img src="styles/Assets/homepage/sfa_logo.png" alt="sfa-logo" width="100px">
@@ -179,6 +204,6 @@
     </div>
   </nav>
   
-  <script type="module" src="scripts/about.js"></script>
+  <script type="module" src="scripts/fixtures.js"></script>
 </body>
 </html>

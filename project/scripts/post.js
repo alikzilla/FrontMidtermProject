@@ -39,7 +39,7 @@ submitComment.addEventListener('click', () => {
         section.classList.add('comments-block');
         section.innerHTML = 
             `<div class="comment-user">
-                <img src="assets/main/user.png" alt="" width="50px">
+                <img src="styles/Assets/post/anonym.png" alt="" width="50px">
                 <div class="comment-user-data">
                     <p class="user-title"><b>Anonymous</b> says:</p>
                 </div>

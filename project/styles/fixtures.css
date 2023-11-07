@@ -130,26 +130,6 @@ header{
     display: none;
 }
 
-.auth_block button{
-    background-color: #933f4a;
-    height: 60px;
-    width: 130px;
-    border: 1px solid white;
-    border-radius: 5px;
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
-}
-
-.auth_block button:hover{
-    background-color: #9F2637;
-    border: 1px solid white;
-}
-
-.search{
-    width: 50px;
-}
-
 .header__navigation{
     height: 95px;
     display: flex;
@@ -181,7 +161,7 @@ header{
     border-bottom: 3px solid black;
 }
 
-.header__navigation nav a:first-child{
+.header__navigation nav a:nth-child(2){
     border-bottom: 3px solid black;
 }
 
@@ -191,80 +171,11 @@ header{
 
 /* Header */
 
-/*Welcome Block*/
-
-.welcome__block{
-    background-color: #9F2637;
-    padding: 30px 0;
-    margin-top: 190px;
-}
-
-.posts{
-    width: 100%;
-    display: flex;
-    gap: 30px;
-}
-
-.post_wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    width: 60%;
-}
-
-.post_wrapper_side{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-    gap: 20px;
-}
-
-.welcome_post{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    color: white;
-    width: 1200px;
-    gap: 15px;
-}
-
-.welcome_post_side{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    color: white;
-    width: 100%;
-    gap: 5px;
-}
-
-.welcome_post img, .welcome_post_side img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-.welcome_post a:hover, .welcome_post_side a:hover{
-    text-decoration: underline;
-}
-
-.welcome_post h1{
-    font-size: 30px;
-}
-
-.welcome_post p{
-    font-size: 20px;
-}
-
-.welcome_post_side h1{
-    font-size: 20px;
-}
-
 /*Main Posts*/
 
 .main_posts{
-    padding: 100px 0;
+    padding: 50px 0;
+    margin-top: 190px;
 }
 
 .main_posts__wrapper{
@@ -274,42 +185,8 @@ header{
     gap: 30px;
 }
 
-.main_posts__block{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.post{
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    background-color: #012E58;
-    border-radius: 10px;
-    color: white;
-}
-
-.post:nth-child(2){
-    flex-direction: row-reverse;
-}
-
-.post img{
-    width: 60%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.post-title{
-    font-size: 35px;
-}
-
-.post p{
-    font-size: 20px;
-}
-
 .nav_posts__block{
-    width: calc(30% - 30px);
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -349,14 +226,13 @@ header{
     color: #012E58;
 }
 
-.match_list,
-.next_match_list {
+.match_list, .next_match_list {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  width: 80%;
+  width: 95%;
 }
 
 .match_list li,
@@ -368,32 +244,21 @@ header{
   width: 100%;
   padding: 10px 0;
   font-size: 15px;
+}
 
+.match_list li:hover,
+.next_match_list li:hover {
+  background-color: rgb(236, 236, 236);
+  cursor: pointer;
 }
 
 .list_item{
-    width: 20%;
+    width: 30%;
     text-align: center;
 }
 
-.match_post a{
-    width: 95%;
-    height: 50px;
-}
-
-.match_post button{
-    width: 100%;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #012E58;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid #012E58;
-}
-
-.match_post button:hover{
-    background-color: rgb(224, 224, 224);
+.team_logo{
+    width: 50px;
 }
 
 .scoreboard{
@@ -413,7 +278,6 @@ header{
     width: 95%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 .score_row:first-child{
@@ -424,9 +288,18 @@ header{
     width: 100%;
     display: flex;
     font-size: 25px;
-    gap: 10px;
     border-bottom: 1px solid gray;
-    height: 45px;
+    height: 60px;
+}
+
+.score_row:first-child:hover{
+    background-color: initial;
+    cursor: pointer;
+}
+
+.score_row:hover{
+    background-color: rgb(224, 224, 224);
+    cursor: pointer;
 }
 
 .score_1item{
@@ -441,7 +314,7 @@ header{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
 }
 
 .score_3item{
@@ -450,22 +323,6 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding-right: 10px;
-}
-
-.scoreboard a{
-    width: 95%;
-    height: 50px;
-}
-
-.scoreboard button{
-    width: 100%;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #012E58;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid #012E58;
 }
 
 .scoreboard button:hover{
@@ -556,25 +413,9 @@ footer{
 
     /*Header*/
 
-    /*Welcome*/
-
-    .welcome__block{
-        margin-top: 95px;
+    .main_posts{
+        margin-top: 85px;
     }
-
-    .main_posts__block{
-        width: 100%;
-    }
-
-    .post-title{
-        font-size: 30px;
-    }  
-
-    .nav_posts__block{
-        display: none;
-    }
-
-    /*Welcome*/
 
     /*Footer*/
 
@@ -610,28 +451,15 @@ footer{
     }
 
     /*header*/
-
-    /*welcome*/
-
-    .post{
-        flex-direction: column;
-    }
-
-    .post img{
-        width: 100%;
-        height: auto;
-    }
-
-    .post:nth-child(2){
-        flex-direction: column;
-    }
-
-    .post-title{
-        font-size: 25px;
-    } 
-
-    /*welcome*/
     
+    .text{
+        font-size: 20px;
+    }
+
+    .team_logo{
+        width: 30px;
+    }
+
     /*Footer*/
 
     .footer__links_block{
@@ -698,6 +526,22 @@ footer{
 
     /*welcome*/
 
+    .matchweek h1{
+        font-size: 25px;
+    }
+
+    #current_date, #next_date{
+        font-size: 20px;
+    }
+
+    .text{
+        font-size: 15px;
+    }
+
+    .team_logo{
+        width: 25px;
+    }
+
     /*Footer*/
 
     .footer__links h1{
@@ -730,6 +574,22 @@ footer{
     }
 
     /*Header*/
+
+    .matchweek img{
+        width: 30px;
+    }
+
+    .list_item{
+        width: 27%;
+    }
+
+    .text{
+        font-size: 15px;
+    }
+
+    .team_logo{
+        width: 25px;
+    }
 
     /*Welcome*/
 

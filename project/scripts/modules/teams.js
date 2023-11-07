@@ -89,6 +89,38 @@ export function setMatchTable(matchList, nextMatchList) {
     }
 }
 
+export function setMatchTableFull(matchList, nextMatchList) {
+    let timeCount = 0;
+
+    for (let i = 1; i < teams.length; i = i + 2) {
+        const li = document.createElement("li");
+        li.innerHTML = `
+            <h1 class="list_item text">${teams[i - 1].name}</h1>
+            <img class="list_item team_logo" src="styles/Assets/homepage/team_logo.png" alt="team-logo" width="30px">
+            <h1 class="list_item text">${20 + timeCount}:00</h1>
+            <img class="list_item team_logo" src="styles/Assets/homepage/team_logo.png" alt="team-logo" width="30px">
+            <h1 class="list_item text">${teams[i].name}</h1>
+        `;
+        timeCount++;
+        matchList.appendChild(li);
+    }
+
+    timeCount = 0;
+
+    for (let i = 1; i < teams.length / 2; i = i + 2) {
+        const li = document.createElement("li");
+        li.innerHTML = `
+            <h1 class="list_item text">${teams[i - 1].name}</h1>
+            <img class="list_item team_logo" src="styles/Assets/homepage/team_logo.png" alt="team-logo" width="30px">
+            <h1 class="list_item text">${20 + timeCount}:00</h1>
+            <img class="list_item team_logo" src="styles/Assets/homepage/team_logo.png" alt="team-logo" width="30px">
+            <h1 class="list_item text">${teams[i].name}</h1>
+        `;
+        timeCount++;
+        nextMatchList.appendChild(li);
+    }
+}
+
 export function setScoreboard(scoreTable) {
     const sortedTeams = [...teams];
     sortedTeams.sort((a, b) => a.position - b.position);
@@ -96,9 +128,9 @@ export function setScoreboard(scoreTable) {
     for (let i = 0; i < sortedTeams.length; i++) {
         const tr = document.createElement("tr");
         tr.innerHTML = `
-            <td class="score_1item">${sortedTeams[i].position}</td>
-            <td class="score_2item"><img src="styles/Assets/homepage/team_logo.png" alt="" width="30px">${sortedTeams[i].name}</td>
-            <td class="score_3item">${sortedTeams[i].score}</td>
+            <td class="score_1item"><p class="text">${sortedTeams[i].position}</p></td>
+            <td class="score_2item"><img class="team_logo" src="styles/Assets/homepage/team_logo.png" alt="" width="30px"><p class="text">${sortedTeams[i].name}</p></td>
+            <td class="score_3item"><p class="text">${sortedTeams[i].score}</p></td>
         `;
         tr.classList.add("score_row");
         scoreTable.appendChild(tr);
