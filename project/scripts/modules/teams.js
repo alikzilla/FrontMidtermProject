@@ -136,3 +136,17 @@ export function setScoreboard(scoreTable) {
         scoreTable.appendChild(tr);
     }
 }
+
+export function setClubs(clubs){
+    for (let i = 0; i < teams.length; i++) {
+        const div = document.createElement("div");
+        div.innerHTML = `
+            <img src="styles/Assets/homepage/team_logo.png" alt="team_logo" width="150px">
+            <div class="text__wrapper">
+                <p class="club_name">${teams[i].name}</p>
+            </div>
+        `;
+        div.classList.add("club");
+        clubs.appendChild(div);
+    }
+}

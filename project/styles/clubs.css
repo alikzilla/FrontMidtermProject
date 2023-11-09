@@ -20,8 +20,6 @@ ul, li{
     list-style: none;
 }
 
-/*Sidebar*/
-
 /* Sidebar */
 .sidebar {
     position: fixed;
@@ -130,6 +128,26 @@ header{
     display: none;
 }
 
+.auth_block button{
+    background-color: #933f4a;
+    height: 60px;
+    width: 130px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.auth_block button:hover{
+    background-color: #9F2637;
+    border: 1px solid white;
+}
+
+.search{
+    width: 50px;
+}
+
 .header__navigation{
     height: 95px;
     display: flex;
@@ -161,7 +179,7 @@ header{
     border-bottom: 3px solid black;
 }
 
-.header__navigation nav a:nth-child(2){
+.header__navigation nav a:nth-child(4){
     border-bottom: 3px solid black;
 }
 
@@ -171,168 +189,57 @@ header{
 
 /* Header */
 
-/*Main Posts*/
-
-.main_posts{
-    padding: 50px 0;
+.post-title{
     margin-top: 190px;
-}
-
-.main_posts__wrapper{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.nav_posts__block{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.match_post{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
-    width: 100%;
-    border: 1px solid #012E58;
-    border-radius: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-}
-
-.matchweek{
-    text-align: center;
-    background-color: #9F2637;
-    width: 100%;
-    border-radius: 10px 10px 0 0;
+    height: 200px;
+    background-color: #012E58;
     color: white;
-    font-size: 25px;
+}
+
+.post__wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding: 40px 40px;
+    height: 100%;
+}
+
+.title{
+    font-size: 100px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.clubs{
+    padding: 50px 0;
+}
+
+.clubs__wrapper{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 10px;
-    padding: 20px;
 }
 
-#current_date, #next_date{
-    font-size: 30px;
-    font-weight: bold;
-    color: #012E58;
-}
-
-.match_list, .next_match_list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-  width: 95%;
-}
-
-.match_list li,
-.next_match_list li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: 1px solid #012E58;
-  width: 100%;
-  padding: 10px 0;
-  font-size: 15px;
-}
-
-.match_list li:hover,
-.next_match_list li:hover {
-  background-color: rgb(236, 236, 236);
-  cursor: pointer;
-}
-
-.list_item{
-    width: 30%;
-    text-align: center;
-}
-
-.team_logo{
-    width: 50px;
-}
-
-.scoreboard{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
-    width: 100%;
-    border: 1px solid #012E58;
+.club{
+    border: 2px solid #012E58;
     border-radius: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-}
-
-.score_table{
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-}
-
-.score_row:first-child{
-    font-size: 20px;
-}
-
-.score_row{
-    width: 100%;
-    display: flex;
-    font-size: 25px;
-    border-bottom: 1px solid gray;
-    height: 60px;
-}
-
-.score_row:first-child:hover{
-    background-color: initial;
+    width: 340px;
+    padding: 15px 20px;
     cursor: pointer;
 }
 
-.score_row:hover{
-    background-color: rgb(224, 224, 224);
-    cursor: pointer;
-}
-
-.score_1item{
-    width: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.text__wrapper{
+    font-size: 35px;
     font-weight: bold;
+    padding: 0 10px;
 }
 
-.score_2item{
-    width: 70%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 15px;
-    font-weight: bold;
+.club:hover{
+    background-color: #9F2637;
+    border: 2px solid #933f4a;
 }
-
-.score_3item{
-    width: 15%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 10px;
-    font-weight: bold;
-}
-
-.scoreboard button:hover{
-    background-color: rgb(224, 224, 224);
-}
-
-/*Main Posts*/
 
 /*Footer*/
 
@@ -416,9 +323,6 @@ footer{
 
     /*Header*/
 
-    .main_posts{
-        margin-top: 85px;
-    }
 
     /*Footer*/
 
@@ -454,15 +358,11 @@ footer{
     }
 
     /*header*/
+
+    .post-title{
+        margin-top: 95px;
+    }
     
-    .text{
-        font-size: 20px;
-    }
-
-    .team_logo{
-        width: 30px;
-    }
-
     /*Footer*/
 
     .footer__links_block{
@@ -501,49 +401,7 @@ footer{
         max-width: 500px;
     }
 
-    /*welcome*/
-
-    .welcome_post a h1{
-        font-size: 20px;
-    }
-
-    .welcome_post p{
-        font-size: 15px;
-    }
-
-    .welcome_post_side a h1{
-        font-size: 15px;
-    }
-
-    .welcome_post_side p{
-        font-size: 10px;
-    }
-
-    .post-title{
-        font-size: 20px;
-    }   
-
-    .post p{
-        font-size: 15px;
-    }
-
-    /*welcome*/
-
-    .matchweek h1{
-        font-size: 25px;
-    }
-
-    #current_date, #next_date{
-        font-size: 20px;
-    }
-
-    .text{
-        font-size: 15px;
-    }
-
-    .team_logo{
-        width: 25px;
-    }
+    
 
     /*Footer*/
 
@@ -578,43 +436,7 @@ footer{
 
     /*Header*/
 
-    .matchweek img{
-        width: 30px;
-    }
-
-    .list_item{
-        width: 30%;
-    }
-
-    .list_item:nth-child(3){
-        width: 20%;
-    }
-
-    .text{
-        font-size: 15px;
-    }
-
-    .team_logo{
-        width: 25px;
-    }
-
-    .score_1item{
-       font-size: 15px;
-    }
-    
-    .score_2item{
-       font-size: 15px;
-    }
-    
-    .score_3item{
-        font-size: 15px;
-    }
-
-    .match_sfa_logo{
-        display: none;
-    }
-
-    .score_sfa_logo{
-        display: none;
+    .title{
+        font-size: 50px;
     }
 }
