@@ -196,10 +196,6 @@ header{
     align-items: center;
 }
 
-.main_posts{
-    padding: 50px 0;
-}
-
 .main_posts__wrapper{
     width: 100%;
     display: flex;
@@ -485,6 +481,10 @@ footer{
         width: 30px;
     }
 
+    .post-title{
+        margin-top: 95px;
+    }
+
     /*Footer*/
 
     .footer__links_block{
@@ -638,5 +638,9 @@ footer{
 
     .score_sfa_logo{
         display: none;
+    }
+
+    .title{
+        font-size: 50px;
     }
 }
