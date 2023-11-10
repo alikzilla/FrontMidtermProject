@@ -20,8 +20,6 @@ ul, li{
     list-style: none;
 }
 
-/*Sidebar*/
-
 /* Sidebar */
 .sidebar {
     position: fixed;
@@ -33,6 +31,7 @@ ul, li{
     padding: 15px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease;
+    z-index: 10;
     /* border: #012E58 3px solid; */
 }
 
@@ -95,6 +94,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 .sfa_logo{
@@ -181,7 +181,7 @@ header{
     border-bottom: 3px solid black;
 }
 
-.header__navigation nav a:first-child{
+.header__navigation nav a:nth-child(5){
     border-bottom: 3px solid black;
 }
 
@@ -191,288 +191,93 @@ header{
 
 /* Header */
 
-/*Welcome Block*/
-
-.welcome__block{
-    background-color: #9F2637;
-    padding: 30px 0;
-    margin-top: 190px;
-}
-
-.posts{
-    width: 100%;
-    display: flex;
-    gap: 30px;
-}
-
-.post_wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    width: 60%;
-}
-
-.post_wrapper_side{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-    gap: 20px;
-}
-
-.welcome_post{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    color: white;
-    width: 1200px;
-    gap: 15px;
-}
-
-.welcome_post_side{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    color: white;
-    width: 100%;
-    gap: 5px;
-}
-
-.welcome_post img, .welcome_post_side img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-.welcome_post a:hover, .welcome_post_side a:hover{
-    text-decoration: underline;
-}
-
-.welcome_post h1{
-    font-size: 30px;
-}
-
-.welcome_post p{
-    font-size: 20px;
-}
-
-.welcome_post_side h1{
-    font-size: 20px;
-}
-
-/*Main Posts*/
-
-.main_posts{
-    padding: 100px 0;
-}
-
-.main_posts__wrapper{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.main_posts__block{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.post{
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    background-color: #012E58;
-    border-radius: 10px;
-    color: white;
-}
-
-.post:nth-child(2){
-    flex-direction: row-reverse;
-}
-
-.post img{
-    width: 60%;
-    height: 100%;
-    border-radius: 10px;
-}
-
 .post-title{
-    font-size: 35px;
-}
-
-.post p{
-    font-size: 20px;
-}
-
-.nav_posts__block{
-    width: calc(30% - 30px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.match_post{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
-    width: 100%;
-    border: 1px solid #012E58;
-    border-radius: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-}
-
-.matchweek{
-    text-align: center;
-    background-color: #9F2637;
-    width: 100%;
-    border-radius: 10px 10px 0 0;
+    margin-top: 190px;
+    height: 200px;
+    background-color: #012E58;
     color: white;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
 }
 
-#current_date, #next_date{
+.post__wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 40px;
+    height: 100%;
+}
+
+.title{
+    font-size: 100px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.players{
+    padding: 50px 0;
+}
+
+.players__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 65px;
+    flex-wrap: wrap;
+}
+
+.player{
+    background-color: rgb(196, 161, 72);
+    border-radius: 20px;
+    padding: 20px 30px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header_card__wrapper{
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 180px;
+    z-index: 1;
+}
+
+.header_card__wrapper h1{
+    font-size: 50px;
+}
+
+.header_card__wrapper img{
+    position: absolute;
+    right: -10px;
+    user-select: none;
+}
+
+.player h1{
+    font-size: 50px;
+}
+
+.card__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 2 / 1 / 3 / 2; }
+.div4 { grid-area: 2 / 2 / 3 / 3; }
+.div5 { grid-area: 3 / 1 / 4 / 2; }
+.div6 { grid-area: 3 / 2 / 4 / 3; }
+
+.stat{
     font-size: 30px;
     font-weight: bold;
-    color: #012E58;
-}
-
-.match_list,
-.next_match_list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-  width: 80%;
-}
-
-.match_list li,
-.next_match_list li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: 1px solid #012E58;
-  width: 100%;
-  padding: 10px 0;
-  font-size: 15px;
-  gap: 5px;
-}
-
-.list_item{
-    width: 20%;
-    text-align: center;
-}
-
-.match_post a{
-    width: 95%;
-    height: 50px;
-}
-
-.match_post button{
-    width: 100%;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #012E58;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid #012E58;
-}
-
-.match_post button:hover{
-    background-color: rgb(224, 224, 224);
-}
-
-.scoreboard{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
-    width: 100%;
-    border: 1px solid #012E58;
-    border-radius: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-}
-
-.score_table{
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.score_row:first-child{
-    font-size: 20px;
-}
-
-.score_row{
-    width: 100%;
-    display: flex;
-    font-size: 25px;
-    gap: 10px;
-    border-bottom: 1px solid gray;
-    height: 45px;
-}
-
-.score_1item{
-    width: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.score_2item{
-    width: 70%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
+    margin-left: 10px;
 }
-
-.score_3item{
-    width: 15%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 10px;
-}
-
-.scoreboard a{
-    width: 95%;
-    height: 50px;
-}
-
-.scoreboard button{
-    width: 100%;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #012E58;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid #012E58;
-}
-
-.scoreboard button:hover{
-    background-color: rgb(224, 224, 224);
-}
-
-/*Main Posts*/
 
 /*Footer*/
 
@@ -556,25 +361,6 @@ footer{
 
     /*Header*/
 
-    /*Welcome*/
-
-    .welcome__block{
-        margin-top: 95px;
-    }
-
-    .main_posts__block{
-        width: 100%;
-    }
-
-    .post-title{
-        font-size: 30px;
-    }  
-
-    .nav_posts__block{
-        display: none;
-    }
-
-    /*Welcome*/
 
     /*Footer*/
 
@@ -611,26 +397,9 @@ footer{
 
     /*header*/
 
-    /*welcome*/
-
-    .post{
-        flex-direction: column;
-    }
-
-    .post img{
-        width: 100%;
-        height: auto;
-    }
-
-    .post:nth-child(2){
-        flex-direction: column;
-    }
-
     .post-title{
-        font-size: 25px;
-    } 
-
-    /*welcome*/
+        margin-top: 95px;
+    }
     
     /*Footer*/
 
@@ -670,33 +439,7 @@ footer{
         max-width: 500px;
     }
 
-    /*welcome*/
-
-    .welcome_post a h1{
-        font-size: 20px;
-    }
-
-    .welcome_post p{
-        font-size: 15px;
-    }
-
-    .welcome_post_side a h1{
-        font-size: 15px;
-    }
-
-    .welcome_post_side p{
-        font-size: 10px;
-    }
-
-    .post-title{
-        font-size: 20px;
-    }   
-
-    .post p{
-        font-size: 15px;
-    }
-
-    /*welcome*/
+    
 
     /*Footer*/
 
@@ -731,35 +474,11 @@ footer{
 
     /*Header*/
 
-    /*Welcome*/
-
-    .posts{
-        flex-direction: column;
-    }
-
-    .post_wrapper{
-        width: 100%;
-    }
-
-    .welcome_post a h1{
-        font-size: 20px;
-    }
-
-    .welcome_post p{
-        font-size: 15px;
-    }
-
-    .post_wrapper_side{
-        width: 100%;
+    .title{
+        font-size: 50px;
     }
 
     .post-title{
-        font-size: 20px;
-    }   
-
-    .post p{
-        font-size: 15px;
+        height: 150px;
     }
-
-    /*Welcome*/
 }

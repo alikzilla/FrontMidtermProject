@@ -306,8 +306,13 @@ header{
     text-align: center;
 }
 
-.match_post button{
+.scoreboard a, .match_post a{
     width: 95%;
+    height: 50px;
+}
+
+.match_post button{
+    width: 100%;
     height: 50px;
     font-size: 20px;
     font-weight: bold;
@@ -379,7 +384,7 @@ header{
 }
 
 .scoreboard button{
-    width: 95%;
+    width: 100%;
     height: 50px;
     font-size: 20px;
     font-weight: bold;

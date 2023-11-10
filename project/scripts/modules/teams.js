@@ -4,56 +4,64 @@ export const teams = [
         tag: "HUN",
         logoID: 1,
         score: 20,
-        position: 4
+        position: 4,
+        photoID: 'hunters'
     },
     {
         name: "INTER FC",
         tag: "INT",
         logoID: 2,
         score: 1,
-        position: 8
+        position: 8,
+        photoID: 'inter'
     },
     {
-        name: "FC MAIQUDUQ",
-        tag: "MIQ",
+        name: "BARABAR",
+        tag: "BRB",
         logoID: 3,
         score: 23,
-        position: 2
+        position: 2,
+        photoID: 'barabar'
     },
     {
-        name: "FC BUYGUYS",
+        name: "FC BAYGUYS",
         tag: "BGS",
         logoID: 4,
         score: 22,
-        position: 3
+        position: 3,
+        photoID: 'bayguys'
     },
     {
-        name: "ORDA",
-        tag: "ORD",
+        name: "EVOLUTION",
+        tag: "EVO",
         logoID: 5,
         score: 18,
-        position: 5
+        position: 5,
+        photoID: 'evolution'
     },
     {
         name: "HALAL JIGI",
         tag: "HJG",
         logoID: 6,
         score: 30,
-        position: 1
+        position: 1,
+        photoID: 'halal'
     },
     {
         name: "SNOWKIDS",
         tag: "SNS",
         logoID: 7,
         score: 15,
-        position: 6
+        position: 6,
+        photoID: 'snowkids'
     },
     {
         name: "SUNKAR",
         tag: "SKR",
         logoID: 8,
         score: 10,
-        position: 7
+        position: 7,
+        photoID: 'sunkar'
     }
 ];
 
@@ -64,9 +72,9 @@ export function setMatchTable(matchList, nextMatchList) {
         const li = document.createElement("li");
         li.innerHTML = `
             <h1 class="list_item">${teams[i - 1].tag}</h1>
-            <img class="list_item" style="width:35px" src="styles/Assets/homepage/team_logo.png" alt="team-logo">
+            <img class="list_item" style="width:40px" src="styles/Assets/teams/${teams[i - 1].photoID}.png" alt="team-logo">
             <h1 class="list_item">${20 + timeCount}:00</h1>
-            <img class="list_item" style="width:35px" src="styles/Assets/homepage/team_logo.png" alt="team-logo">
+            <img class="list_item" style="width:40px" src="styles/Assets/teams/${teams[i].photoID}.png" alt="team-logo">
             <h1 class="list_item">${teams[i].tag}</h1>
         `;
         timeCount++;
@@ -79,9 +87,9 @@ export function setMatchTable(matchList, nextMatchList) {
         const li = document.createElement("li");
         li.innerHTML = `
             <h1 class="list_item">${teams[i - 1].tag}</h1>
-            <img class="list_item" style="width:35px" src="styles/Assets/homepage/team_logo.png" alt="team-logo">
+            <img class="list_item" style="width:40px" src="styles/Assets/teams/${teams[i - 1].photoID}.png" alt="team-logo">
             <h1 class "list_item">${20 + timeCount}:00</h1>
-            <img class="list_item" style="width:35px" src="styles/Assets/homepage/team_logo.png" alt="team-logo">
+            <img class="list_item" style="width:40px" src="styles/Assets/teams/${teams[i].photoID}.png" alt="team-logo">
             <h1 class="list_item">${teams[i].tag}</h1>
         `;
         timeCount++;
@@ -96,9 +104,9 @@ export function setMatchTableFull(matchList, nextMatchList) {
         const li = document.createElement("li");
         li.innerHTML = `
             <h1 class="list_item text">${teams[i - 1].name}</h1>
-            <img class="list_item team_logo" src="styles/Assets/homepage/team_logo.png" alt="team-logo" width="30px">
+            <img class="list_item team_logo" src="styles/Assets/teams/${teams[i - 1].photoID}.png" alt="team-logo" width="40px">
             <h1 class="list_item text">${20 + timeCount}:00</h1>
-            <img class="list_item team_logo" src="styles/Assets/homepage/team_logo.png" alt="team-logo" width="30px">
+            <img class="list_item team_logo" src="styles/Assets/teams/${teams[i].photoID}.png" alt="team-logo" width="40px">
             <h1 class="list_item text">${teams[i].name}</h1>
         `;
         timeCount++;
@@ -111,9 +119,9 @@ export function setMatchTableFull(matchList, nextMatchList) {
         const li = document.createElement("li");
         li.innerHTML = `
             <h1 class="list_item text">${teams[i - 1].name}</h1>
-            <img class="list_item team_logo" src="styles/Assets/homepage/team_logo.png" alt="team-logo" width="30px">
+            <img class="list_item team_logo" src="styles/Assets/teams/${teams[i - 1].photoID}.png" alt="team-logo" width="30px">
             <h1 class="list_item text">${20 + timeCount}:00</h1>
-            <img class="list_item team_logo" src="styles/Assets/homepage/team_logo.png" alt="team-logo" width="30px">
+            <img class="list_item team_logo" src="styles/Assets/teams/${teams[i].photoID}.png" alt="team-logo" width="30px">
             <h1 class="list_item text">${teams[i].name}</h1>
         `;
         timeCount++;
@@ -129,7 +137,7 @@ export function setScoreboard(scoreTable) {
         const tr = document.createElement("tr");
         tr.innerHTML = `
             <td class="score_1item"><p class="text">${sortedTeams[i].position}</p></td>
-            <td class="score_2item"><img class="team_logo" src="styles/Assets/homepage/team_logo.png" alt="" width="30px"><p class="text">${sortedTeams[i].name}</p></td>
+            <td class="score_2item"><img class="team_logo" src="styles/Assets/teams/${teams[i].photoID}.png" alt="" width="40px"><p class="text">${sortedTeams[i].name}</p></td>
             <td class="score_3item"><p class="text">${sortedTeams[i].score}</p></td>
         `;
         tr.classList.add("score_row");
@@ -141,12 +149,35 @@ export function setClubs(clubs){
     for (let i = 0; i < teams.length; i++) {
         const div = document.createElement("div");
         div.innerHTML = `
-            <img src="styles/Assets/homepage/team_logo.png" alt="team_logo" width="150px">
+            <img src="styles/Assets/teams/${teams[i].photoID}.png" alt="team_logo" width="150px">
             <div class="text__wrapper">
                 <p class="club_name">${teams[i].name}</p>
             </div>
         `;
         div.classList.add("club");
         clubs.appendChild(div);
+    }
+}
+
+export function setPlayers(players) {
+    for (let i = 0; i < 11; i++) {
+        const div = document.createElement("div");
+        div.innerHTML = `
+            <div class="header_card__wrapper">
+                <h1>99<br>RW</h1>
+                <img src="styles/Assets/players/messi.png" alt="messi" width="300px">
+            </div>
+            <h1>Messi</h1>
+            <div class="card__wrapper">
+                <div class="div1 stat">99 PAC</div>
+                <div class="div2 stat">99 SHO</div>
+                <div class="div3 stat">99 PAS</div>
+                <div class="div4 stat">99 DRI</div>
+                <div class="div5 stat">99 DEF</div>
+                <div class="div6 stat">99 PHY</div>
+            </div>
+        `;
+        div.classList.add("player");
+        players.appendChild(div);
     }
 }

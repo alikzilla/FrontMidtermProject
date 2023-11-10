@@ -2,18 +2,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SDU Football Association</title>
+  <title>SFA: Players</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="styles/Assets/homepage/sfa_logo.png">
-  <link rel="stylesheet" href="styles/post.css">
+  <link rel="stylesheet" href="styles/players.css">
 </head>
 <body>
 
   <div>
 
     <header>
+
       <a href="homepage.html"><img class="sfa_logo" src="styles/Assets/homepage/sfa_logo.png" alt="sfa-logo"></a>
   
       <div class="header__menubar">
@@ -38,85 +39,35 @@
       </div>
   
     </header>
-    
-    <section class="main_posts">
-      <div class="container">
-        <div class="main_posts__wrapper">
-  
-          <div class="main_posts__block">
-            <div class="post">
-              <img src="styles/Assets/homepage/homepage1.jpg" alt="post1_image">
-              <div class="text-wrapper">
-                <h1 class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, incidunt.</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A, aliquam et accusantium 
-                  libero, consectetur enim ipsum corporis velit dolorum rem fuga ullam pariatur eos 
-                  dolor error, cumque itaque sit ut numquam veniam? Soluta ab quia recusandae 
-                  voluptates voluptatibus qui consectetur.
-                </p>
-              </div>
-            </div>
-            
-            <section class="comment-input">
-              <div class="comment-textarea">
-                  <textarea class="textarea" name="comment" placeholder="Write a comment..."></textarea>
-              </div>
-              <div class="comment-submit">
-                  <button class="submit-button">Reply</button>
-              </div>
-            </section>
 
-            <div class="comments">
-              <section class="comments-block">
-                <div class="comment-user">
-                    <img src="styles/Assets/post/anonym.png" alt="" width="50px">
-                    <div class="comment-user-data">
-                        <p class="user-title"><b>Anonymous</b> says:</p>
-                    </div>
-                </div>
-                <div class="divisor"></div>
-                <div class="comment-content-wrapper">
-                    <div class="comment-content">
-                        Thank you so much for the support and kind words for all book bloggers out there.
-                    </div>
-                </div>
-                <button class="reply-button">Reply</button>
-              </section>
-            </div>            
-  
+    <section class="post-title">
+      <div class="container">
+        <div class="post__wrapper">
+          <div class="title">
+            Players
           </div>
+        </div>
+      </div>
+    </section>
   
-          <div class="nav_posts__block">
-            
-            <div class="match_post">
-              <div class="matchweek">
-                <img src="styles/Assets/homepage/sfa_logo.png" alt="sfa-logo" width="50px">
-                <h1>Matchweek 8</h1>
-              </div>
-              <p>All times shown are your <b>local time</b></p>
-              <p id="current_date"></p>
-              <ul class="match_list"></ul>
-              <p id="next_date"></p>
-              <ul class="next_match_list"></ul> 
-              <a href="fixtures.html"><button>View All Fixtures</button></a>
+    <section class="players">
+      <div class="container">
+        <div class="players__wrapper">
+          <div class="player">
+            <div class="header_card__wrapper">
+              <h1>99<br>RW</h1>
+              <img src="styles/Assets/players/messi.png" alt="messi" width="300px">
             </div>
-  
-            <div class="scoreboard">
-              <div class="matchweek">
-                <img src="styles/Assets/homepage/sfa_logo.png" alt="sfa-logo" width="50px">
-                <h1>SFA LEAGUE</h1>
-              </div>
-              <table class="score_table">
-                <tr class="score_row">
-                  <td class="score_1item">Pos</td>
-                  <td class="score_2item">Club</td>
-                  <td class="score_3item">Pts</td>
-                </tr>
-              </table>
-              <a href="fixtures.html"><button>View more</button></a>
+            <h1>Messi</h1>
+            <div class="card__wrapper">
+              <div class="div1 stat">99 PAC</div>
+              <div class="div2 stat">99 SHO</div>
+              <div class="div3 stat">99 PAS</div>
+              <div class="div4 stat">99 DRI</div>
+              <div class="div5 stat">99 DEF</div>
+              <div class="div6 stat">99 PHY</div>
             </div>
           </div>
-  
         </div>
       </div>
     </section>
@@ -178,12 +129,12 @@
   
         <div class="footer__description">
           <div class="description__nav">
-            <a href="">© SDU FOOTBALL ASSOTIATION 2023</a>
-            <a href="">Modern Slavery Statement</a>
-            <a href="">Equality, Diversity and Inclusion</a>
-            <a href="">Standard Terms & Conditions</a>
-            <a href="">Policies Cookie</a>
-            <a href="">Policy Back To Top</a>
+            <a href="#">© SDU FOOTBALL ASSOTIATION 2023</a>
+            <a href="#">Modern Slavery Statement</a>
+            <a href="#">Equality, Diversity and Inclusion</a>
+            <a href="#">Standard Terms & Conditions</a>
+            <a href="#">Policies Cookie</a>
+            <a href="#">Policy Back To Top</a>
           </div>
           <div>
             <img src="styles/Assets/homepage/sfa_logo.png" alt="sfa-logo" width="100px">
@@ -195,7 +146,7 @@
 
   </div>
 
-  <nav class="sidebar locked close">
+  <nav class="sidebar close">
 
     <div class="menu_container">
       <div class="menu_items">
@@ -218,6 +169,6 @@
     </div>
   </nav>
   
-  <script type="module" src="scripts/post.js"></script>
+  <script type="module" src="scripts/players.js"></script>
 </body>
 </html>
