@@ -137,7 +137,7 @@ export function setScoreboard(scoreTable) {
         const tr = document.createElement("tr");
         tr.innerHTML = `
             <td class="score_1item"><p class="text">${sortedTeams[i].position}</p></td>
-            <td class="score_2item"><img class="team_logo" src="styles/Assets/teams/${teams[i].photoID}.png" alt="" width="40px"><p class="text">${sortedTeams[i].name}</p></td>
+            <td class="score_2item"><img class="team_logo" src="styles/Assets/teams/${sortedTeams[i].photoID}.png" alt="" width="40px"><p class="text">${sortedTeams[i].name}</p></td>
             <td class="score_3item"><p class="text">${sortedTeams[i].score}</p></td>
         `;
         tr.classList.add("score_row");
