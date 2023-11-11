@@ -93,6 +93,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 .sfa_logo{
@@ -212,7 +213,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    text-align: center;
+    text-align: start;
 }
 
 .post_content h1{
@@ -221,6 +222,38 @@ header{
 
 .post_content p{
     font-size: 25px;
+}
+
+.add_text{
+    font-size: 25px;
+}
+
+.about_sfa_logo{
+    width: 150px;
+}
+
+.map_info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-self: center;
+}
+
+.map_info button{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+#map{
+    width: 100%;
+    height: 400px;
+    z-index: 1;
 }
 
 /*About*/
@@ -457,6 +490,10 @@ footer{
 
     .about_sfa_logo{
         width: 100px;
+    }
+
+    .add_text{
+        font-size: 15px;
     }
 
     /*About*/
