@@ -466,8 +466,9 @@ header{
 }
 
 .comment-textarea textarea{
-    height: 300px;
-    outline: none;
+    outline: 1px solid #a4d3ff;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .comment-submit{
@@ -750,7 +751,7 @@ footer{
 
 @media screen and (max-width: 400px){
     .container{
-        max-width: 300px;
+        max-width: 350px;
     }
 
     /*Header*/

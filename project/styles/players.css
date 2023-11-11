@@ -455,7 +455,7 @@ footer{
 
 @media screen and (max-width: 400px){
     .container{
-        max-width: 300px;
+        max-width: 350px;
     }
 
     /*Header*/
@@ -482,5 +482,9 @@ footer{
 
     .post__wrapper{
         padding: 5px;
+    }
+
+    .players__wrapper{
+        justify-content: center;
     }
 }

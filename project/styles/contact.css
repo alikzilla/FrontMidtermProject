@@ -198,6 +198,51 @@ header{
     align-items: center;
 }
 
+.post_content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.contact-section {
+    margin-bottom: 20px;
+  }
+  
+.contact-form {
+    display: grid;
+    gap: 10px;
+    width: 600px;
+}
+  
+.form-label {
+    font-weight: bold;
+}
+  
+.form-input {
+    resize: vertical;
+    height: 40px;
+    font-size: 20px;
+    padding: 3px 10px;
+}
+  
+.submit-button {
+    background-color: #012E58;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+  
+.submit-button:hover {
+    background-color: #3ca1ff;
+}
+
+.contact-info-text {
+    line-height: 1.6;
+}
+
 .social_media{
     text-align: center;
 }
@@ -286,6 +331,10 @@ footer{
 
     /*Header*/
 
+    .post_content{
+        flex-direction: column;
+        gap: 50px;
+    }
 
     /*Footer*/
 
@@ -364,8 +413,6 @@ footer{
         max-width: 500px;
     }
 
-    
-
     /*Footer*/
 
     .footer__links h1{
@@ -382,7 +429,7 @@ footer{
 
 @media screen and (max-width: 400px){
     .container{
-        max-width: 300px;
+        max-width: 350px;
     }
 
     /*Header*/
@@ -401,5 +448,9 @@ footer{
 
     .qr-code{
         width: 250px;
+    }
+
+    .contact-form{
+        width: 300px;
     }
 }

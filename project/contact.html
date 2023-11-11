@@ -44,6 +44,36 @@
           <div class="contact_post">
             <div class="post_content">
 
+              <div class="contact_form">
+                <section class="contact-section">
+                  <h2 class="section-heading">Contact Form</h2>
+                  <form id="contactForm" class="contact-form" action="process_form.php" method="post">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+          
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+          
+                    <label for="subject" class="form-label">Subject:</label>
+                    <input type="text" id="subject" name="subject" class="form-input" required>
+          
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="message" class="form-input" rows="4" required></textarea>
+          
+                    <button type="button" class="submit-button" onclick="validateForm()">Submit</button>
+                  </form>
+                </section>
+          
+                <section class="contact-section">
+                  <h2 class="section-heading">Contact Information</h2>
+                  <p class="contact-info-text">
+                    Address: Abylai Khan 1/1, Qaskelen<br>
+                    Phone: 8(777)777-77-77<br>
+                    Email: sfa@gmail.com
+                  </p>
+                </section>
+              </div>
+
               <div class="social_media">
                 <h1>Social Media:</h1>
                 <a href="https://qrco.de/beWIo8">
