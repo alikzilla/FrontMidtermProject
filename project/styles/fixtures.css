@@ -201,6 +201,7 @@ header{
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    padding: 50px 0;
 }
 
 .nav_posts__block{
@@ -434,8 +435,12 @@ footer{
 
     /*Header*/
 
-    .main_posts{
-        margin-top: 85px;
+    .post-title{
+        margin-top: 95px;
+    }
+
+    .title{
+        font-size: 80px;
     }
 
     /*Footer*/
@@ -481,8 +486,8 @@ footer{
         width: 30px;
     }
 
-    .post-title{
-        margin-top: 95px;
+    .title{
+        font-size: 60px;
     }
 
     /*Footer*/
@@ -547,6 +552,10 @@ footer{
 
     .post p{
         font-size: 15px;
+    }
+
+    .title{
+        font-size: 50px;
     }
 
     /*welcome*/
@@ -641,6 +650,14 @@ footer{
     }
 
     .title{
-        font-size: 50px;
+        font-size: 40px;
+    }
+
+    .post-title{
+        height: 150px;
+    }
+
+    .post__wrapper{
+        padding: 5px;
     }
 }

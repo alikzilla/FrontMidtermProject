@@ -437,6 +437,14 @@ footer{
     /*Header*/
 
     .title{
-        font-size: 50px;
+        font-size: 40px;
+    }
+
+    .post-title{
+        height: 150px;
+    }
+
+    .post__wrapper{
+        padding: 5px;
     }
 }

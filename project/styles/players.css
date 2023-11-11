@@ -439,8 +439,6 @@ footer{
         max-width: 500px;
     }
 
-    
-
     /*Footer*/
 
     .footer__links h1{
@@ -480,5 +478,9 @@ footer{
 
     .post-title{
         height: 150px;
+    }
+
+    .post__wrapper{
+        padding: 5px;
     }
 }
