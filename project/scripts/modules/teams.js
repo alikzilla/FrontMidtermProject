@@ -3,8 +3,7 @@ export const teams = [
         name: "FC HUNTERS",
         tag: "HUN",
         logoID: 1,
-        score: 20,
-        position: 4,
+        score: 25,
         photoID: 'hunters'
     },
     {
@@ -12,7 +11,6 @@ export const teams = [
         tag: "INT",
         logoID: 2,
         score: 1,
-        position: 8,
         photoID: 'inter'
     },
     {
@@ -20,15 +18,13 @@ export const teams = [
         tag: "BRB",
         logoID: 3,
         score: 23,
-        position: 2,
         photoID: 'barabar'
     },
     {
         name: "FC BAYGUYS",
         tag: "BGS",
         logoID: 4,
-        score: 22,
-        position: 3,
+        score: 27,
         photoID: 'bayguys'
     },
     {
@@ -36,23 +32,20 @@ export const teams = [
         tag: "EVO",
         logoID: 5,
         score: 18,
-        position: 5,
         photoID: 'evolution'
     },
     {
         name: "HALAL JIGI",
         tag: "HJG",
         logoID: 6,
-        score: 30,
-        position: 1,
+        score: 70,
         photoID: 'halal'
     },
     {
         name: "SNOWKIDS",
         tag: "SNS",
         logoID: 7,
-        score: 15,
-        position: 6,
+        score: 16,
         photoID: 'snowkids'
     },
     {
@@ -60,7 +53,6 @@ export const teams = [
         tag: "SKR",
         logoID: 8,
         score: 10,
-        position: 7,
         photoID: 'sunkar'
     }
 ];
@@ -131,12 +123,12 @@ export function setMatchTableFull(matchList, nextMatchList) {
 
 export function setScoreboard(scoreTable) {
     const sortedTeams = [...teams];
-    sortedTeams.sort((a, b) => a.position - b.position);
+    sortedTeams.sort((a, b) => b.score - a.score);
 
     for (let i = 0; i < sortedTeams.length; i++) {
         const tr = document.createElement("tr");
         tr.innerHTML = `
-            <td class="score_1item"><p class="text">${sortedTeams[i].position}</p></td>
+            <td class="score_1item"><p class="text">${i + 1}</p></td>
             <td class="score_2item"><img class="team_logo" src="styles/Assets/teams/${sortedTeams[i].photoID}.png" alt="" width="40px"><p class="text">${sortedTeams[i].name}</p></td>
             <td class="score_3item"><p class="text">${sortedTeams[i].score}</p></td>
         `;
