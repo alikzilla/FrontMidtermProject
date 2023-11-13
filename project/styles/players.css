@@ -232,6 +232,7 @@ header{
     width: 300px;
     text-align: center;
     cursor: pointer;
+    border: 3px solid rgb(122, 104, 58);
 }
 
 .header_card__wrapper{
