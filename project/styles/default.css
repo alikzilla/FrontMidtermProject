@@ -1,0 +1,376 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul, li{
+    list-style: none;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 270px;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    z-index: 10;
+}
+
+.sidebar.close {
+    padding: 0;
+    width: 0px;
+}
+  
+.menu_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+    height: calc(100% - 82px);
+}
+  
+.menu_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.closeBar{
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    background-color: white;
+    color: black;
+    border: #012E58 3px solid;
+    border-radius: 5px;
+}
+
+.closeBar:hover{
+    background-color: rgb(235, 235, 235);
+}
+
+.menu_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu_item li a{
+    color: black;
+    font-size: 25px;
+}
+
+.menu_item li a:hover{
+    text-decoration: underline;
+}
+
+/*Sidebar*/
+
+/* Header */
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.sfa_logo{
+    width: 150px;
+    position: absolute;
+    left: 35px;
+    top: 20px;
+}
+
+.header__menubar{
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 220px;
+    padding-right: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #9F2637;
+    color: white;
+}
+
+.header__menubar nav{
+    display: flex;
+    gap: 40px;
+}
+
+.header__menubar nav a:hover{
+    text-decoration: underline;
+}
+
+.hamburger{
+    display: none;
+}
+
+.auth_block button{
+    background-color: #933f4a;
+    height: 60px;
+    width: 130px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.auth_block button:hover{
+    background-color: #9F2637;
+    border: 1px solid white;
+}
+
+.search{
+    width: 50px;
+}
+
+.header__navigation{
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 220px;
+    padding-right: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+
+.header__navigation nav{
+    display: flex;
+    height: 100%;
+}
+
+.header__navigation nav a{
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    height: 100%;
+    border-top: 3px solid white;
+    color: black;
+}
+
+.header__navigation nav a:hover{
+    border-bottom: 3px solid black;
+}
+
+.hamburger:hover{
+    background-color: #012E58;
+}
+
+/* Header */
+
+/*Footer*/
+
+footer{
+    background-color: #9F2637;
+    padding: 30px 0;
+    color: white;
+}
+
+.footer__links_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__links h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.footer__links a{
+    font-size: 20px;
+}
+
+.footer__links a:hover{
+    text-decoration: underline;
+}
+
+.footer__description{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description__nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.description__nav a:hover{
+    text-decoration: underline;
+}
+
+/*Footer*/
+
+@media screen and (max-width: 1400px) {
+    .container{
+        max-width: 1100px;
+    }
+
+    /*Header*/
+
+    .header__menubar nav a{
+        font-size: 20px;
+    }
+
+    .sfa_logo{
+        width: 60px;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .header__menubar{
+        padding-left: 150px;
+    }
+
+    .header__navigation{
+        display: none;
+    }
+
+    /*Header*/
+
+    /*Footer*/
+
+    .footer__links h1{
+        font-size: 20px;
+    }
+    
+    .footer__links a{
+        font-size: 15px;
+    }
+
+    .footer__description{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /*Footer*/
+}
+
+@media screen and (max-width: 1000px) {
+    .container{
+        max-width: 700px;
+    }
+
+    /*header*/
+
+    .header__menubar nav{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    /*header*/
+    
+    /*Footer*/
+
+    .footer__links_block{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer__links{
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer__links h1{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .footer__links a{
+        font-size: 20px;
+    }
+
+    .footer__description{
+        gap: 30px;
+    }
+
+    .description__nav{
+        flex-direction: column;
+    }
+
+    /*Footer*/
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 500px;
+    }
+
+    /*Footer*/
+
+    .footer__links h1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .footer__links a{
+        font-size: 15px;
+    }
+
+    /*Footer*/
+}
+
+@media screen and (max-width: 400px){
+    .container{
+        max-width: 350px;
+    }
+
+    /*Header*/
+
+    .header__menubar{
+        justify-content: space-between;
+        padding-right: 0;
+        padding-left: 320px;
+    }
+
+    .hamburger{
+        margin-right: 30px;
+    }
+}
