@@ -36,7 +36,7 @@ We welcome contributions to enhance the SDU Football League Website. Follow thes
 
 To set up the project locally, follow these steps:
 
-1. Clone the repository: git clone https://github.com/alikzilla/Front_Midterm_Project.git.
+1. Clone the repository: git clone https://github.com/alikzilla/Front_Midterm_Project.git
 2. Open the project in your preferred code editor.
 3. Launch the index.html file in your browser.
 
