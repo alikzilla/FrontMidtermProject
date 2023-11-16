@@ -1,12 +1,12 @@
-# SDU Football League Website
+# SDU Football Association Website
 
 ## Frontend Midterm Project (INF 231)
 
-Welcome to the frontend midterm project repository for INF 231 - a course dedicated to mastering the art of web development. This project focuses on creating a dynamic and engaging website for the SDU Football League.
+Welcome to the frontend midterm project repository for INF 231 - a course dedicated to mastering the art of web development. This project focuses on creating a dynamic and engaging website for the SDU Football Association.
 
 ### Project Overview:
 
-The SDU Football League Website is designed to provide a seamless and user-friendly experience for football enthusiasts. Our goal is to showcase the league's teams, players, match schedules, and exciting moments, creating a hub for fans to stay connected with their favorite sport.
+The SDU Football Association Website is designed to provide a seamless and user-friendly experience for football enthusiasts. Our goal is to showcase the league's teams, players, match schedules, and exciting moments, creating a hub for fans to stay connected with their favorite sport.
 
 ### Key Features:
 
@@ -24,7 +24,7 @@ The SDU Football League Website is designed to provide a seamless and user-frien
 
 ### How to Contribute:
 
-We welcome contributions to enhance the SDU Football League Website. Follow these steps to contribute:
+We welcome contributions to enhance the SDU Football Association Website. Follow these steps to contribute:
 
 1. Fork the repository.
 2. Create a new branch: git checkout -b feature/your-feature-name.
@@ -38,11 +38,11 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository: git clone https://github.com/alikzilla/Front_Midterm_Project.git
 2. Open the project in your preferred code editor.
-3. Launch the index.html file in your browser.
+3. Launch the homepage.html file in your browser.
 
 ### Acknowledgments:
 
-We appreciate your interest and contributions to the SDU Football League Website. Let's create a fantastic platform for football enthusiasts together!
+We appreciate your interest and contributions to the SDU Football Association Website. Let's create a fantastic platform for football enthusiasts together!
 
 ---
 
