@@ -1,7 +1,3 @@
-Certainly! Here's an improved version for your GitHub README file:
-
----
-
 # SDU Football League Website
 
 ## Frontend Midterm Project (INF 231)
@@ -25,7 +21,6 @@ The SDU Football League Website is designed to provide a seamless and user-frien
 - HTML5
 - CSS3
 - JavaScript
-- [Any additional technologies you've used]
 
 ### How to Contribute:
 
