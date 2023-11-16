@@ -43,7 +43,3 @@ To set up the project locally, follow these steps:
 ### Acknowledgments:
 
 We appreciate your interest and contributions to the SDU Football Association Website. Let's create a fantastic platform for football enthusiasts together!
-
----
-
-Feel free to customize it further based on your specific project details and preferences.
