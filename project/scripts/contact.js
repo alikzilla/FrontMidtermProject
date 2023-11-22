@@ -8,4 +8,3 @@ const toggleSidebar = () => {
 
 hamburger.addEventListener("click", toggleSidebar);
 closeBtn.addEventListener("click", toggleSidebar);
-

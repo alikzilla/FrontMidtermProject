@@ -48,7 +48,7 @@
               <div class="contact_form">
                 <section class="contact-section">
                   <h2 class="section-heading">Contact Form</h2>
-                  <form id="contactForm" class="contact-form" action="process_form.php" method="post">
+                  <form id="contactForm" class="contact-form">
                     <label for="name" class="form-label">Name:</label>
                     <input type="text" id="name" name="name" class="form-input" required>
           
@@ -61,7 +61,7 @@
                     <label for="message" class="form-label">Message:</label>
                     <textarea id="message" name="message" class="form-input" rows="4" required></textarea>
           
-                    <button type="button" class="submit-button" onclick="validateForm()">Submit</button>
+                    <button id="button" type="submit" class="submit-button">Submit</button>
                   </form>
                 </section>
           
@@ -78,7 +78,7 @@
               <div class="social_media">
                 <h1>Social Media:</h1>
                 <a href="https://qrco.de/sfasocial">
-                  <img class="qr-code" src="styles/Assets/contact/qrcode1.png" alt="qr_code" width="300px">
+                  <img class="qr-code" src="styles/Assets/contact/qrcode.png" alt="qr_code" width="300px">
                 </a>
               </div>
               
@@ -190,7 +190,39 @@
 
     </div>
   </nav>
-  
+
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  <script>
+    const emailBtn = document.getElementById("button");
+
+    emailBtn.addEventListener('click', function(e) {
+    console.log('lol');
+    e.preventDefault();
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+
+    var body = "Name: " + name + "<br/> Email: " + email + "<br/> Subject: " + subject + "<br/> Message: " + message; 
+
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "nuspekov.alikhan@gmail.com",
+        Password : "525A971EFD2C8A661C160364C6A05FEAA4E0",
+        To : 'nuspekov.alikhan@gmail.com',
+        From : "nuspekov.alikhan@gmail.com",
+        Subject : "This is the subject",
+        Body : body
+    }).then(
+        message => alert(message)
+    ).catch(
+        error => alert(error)
+    );
+    });
+  </script>
   <script type="module" src="scripts/contact.js"></script>
+  
+  
 </body>
 </html>

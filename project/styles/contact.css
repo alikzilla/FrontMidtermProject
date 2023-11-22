@@ -46,9 +46,12 @@
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    height: 60px;
+    font-size: 25px;
+    font-weight: bold;
 }
   
-.submit-button:hover {
+.submit-button:active {
     background-color: #3ca1ff;
 }
 
